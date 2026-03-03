@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Algorithms &amp; Behavioral Conditioning</title>
+  <meta name="description"
+    content="An academic exploration of how recommendation algorithms on platforms like TikTok and Instagram influence human behavior through psychological conditioning mechanisms." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📘</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">SM<span>A</span>BC</a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#algorithms">Algorithms</a></li>
+        <li><a href="#conditioning">Conditioning</a></li>
+        <li><a href="#effects">Effects</a></li>
+        <li><a href="#ethics">Ethics</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay -->
+  <div class="mobile-overlay">
+    <button class="mobile-close" aria-label="Close menu">&times;</button>
+    <ul class="mobile-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#algorithms">Algorithms</a></li>
+      <li><a href="#conditioning">Conditioning</a></li>
+      <li><a href="#effects">Effects</a></li>
+      <li><a href="#ethics">Ethics</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+    </ul>
+  </div>
+
+  <!-- ============ SECTION 1 — HERO / HOME ============ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">📘 Academic Study</div>
+      <h1>Social Media Algorithms &amp; <em>Behavioral Conditioning</em></h1>
+      <p class="hero-subtitle">How recommendation systems on TikTok, Instagram, and YouTube exploit psychological
+        conditioning mechanisms to shape human behavior, attention, and identity.</p>
+      <a href="#algorithms" class="hero-cta">Explore the Research ↓</a>
+    </div>
+    <div class="scroll-indicator">Scroll</div>
+  </section>
+
+  <!-- ============ SECTION 2 — HOW ALGORITHMS WORK ============ -->
+  <section class="section section-alt" id="algorithms">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">Chapter 1</span>
+        <h2>How Social Media Algorithms Work</h2>
+        <p>Recommendation systems are the invisible engines that decide what billions of people see, read, and engage
+          with every day.</p>
+      </div>
+
+      <div class="card-grid animate-in">
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h4>Data Collection</h4>
+          <p>Platforms collect behavioral signals—likes, dwell time, scroll speed, re-watches, shares, and even
+            pauses—to build a detailed user interest profile.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧠</div>
+          <h4>Machine Learning Models</h4>
+          <p>Deep neural networks (collaborative filtering, transformers) predict which content maximizes the
+            probability of engagement, optimizing for watch-time and interaction.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔄</div>
+          <h4>Feedback Loops</h4>
+          <p>User reactions feed back into the model in real time, reinforcing content preferences and creating
+            increasingly narrow "filter bubbles" of personalized content.</p>
+        </div>
+      </div>
+
+      <!-- Diagram: Feedback Loop -->
+      <div class="diagram-container animate-in" style="margin-top: 3rem;">
+        <h3>Algorithmic Feedback Loop</h3>
+        <p class="diagram-caption">How user behavior and algorithmic recommendations form a self-reinforcing cycle</p>
+        <svg class="diagram-svg" viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+          <!-- Circular arrows -->
+          <defs>
+            <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6" />
+            </marker>
+          </defs>
+          <!-- Nodes -->
+          <rect x="200" y="10" width="200" height="50" rx="12" fill="#0a1628" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="300" y="40" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="14"
+            font-weight="600">User Opens App</text>
+
+          <rect x="420" y="120" width="170" height="50" rx="12" fill="#0a1628" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="505" y="150" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="14"
+            font-weight="600">Algorithm Serves Content</text>
+
+          <rect x="200" y="240" width="200" height="50" rx="12" fill="#0a1628" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="300" y="270" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="14"
+            font-weight="600">User Engages (Like, Watch)</text>
+
+          <rect x="10" y="120" width="170" height="50" rx="12" fill="#0a1628" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="95" y="150" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="14"
+            font-weight="600">Model Updates Profile</text>
+
+          <!-- Arrows -->
+          <path d="M400,35 Q480,35 490,120" fill="none" stroke="#3b82f6" stroke-width="2"
+            marker-end="url(#arrowBlue)" />
+          <path d="M505,170 Q505,265 400,265" fill="none" stroke="#3b82f6" stroke-width="2"
+            marker-end="url(#arrowBlue)" />
+          <path d="M200,265 Q95,265 95,170" fill="none" stroke="#3b82f6" stroke-width="2"
+            marker-end="url(#arrowBlue)" />
+          <path d="M95,120 Q95,35 200,35" fill="none" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowBlue)" />
+
+          <!-- Center label -->
+          <text x="300" y="155" text-anchor="middle" fill="#3b82f6" font-family="Inter,sans-serif" font-size="12"
+            font-weight="600" opacity="0.7">REINFORCEMENT</text>
+          <text x="300" y="172" text-anchor="middle" fill="#3b82f6" font-family="Inter,sans-serif" font-size="12"
+            font-weight="600" opacity="0.7">CYCLE</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3 — BEHAVIORAL CONDITIONING ============ -->
+  <section class="section" id="conditioning">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">Chapter 2</span>
+        <h2>Behavioral Conditioning Mechanisms</h2>
+        <p>Social media platforms employ core psychological principles that have been studied for over a century—now
+          applied at unprecedented scale.</p>
+      </div>
+
+      <div class="conditioning-grid animate-in">
+        <div class="conditioning-card">
+          <div class="conditioning-number">1</div>
+          <h4>Classical Conditioning</h4>
+          <p>Notification sounds and visual cues (the red badge) become conditioned stimuli that trigger anticipatory
+            dopamine release, compelling users to check their phones even without new content—mirroring Pavlov's
+            bell-salivation response.</p>
+        </div>
+        <div class="conditioning-card">
+          <div class="conditioning-number">2</div>
+          <h4>Operant Conditioning</h4>
+          <p>Likes, comments, and follower counts act as positive reinforcement, increasing the frequency of posting and
+            checking behaviors. Removing engagement (lack of likes) functions as negative punishment, causing anxiety
+            and behavioral adjustment.</p>
+        </div>
+        <div class="conditioning-card">
+          <div class="conditioning-number">3</div>
+          <h4>Variable Reward Schedules</h4>
+          <p>Borrowed from slot machine psychology (B.F. Skinner), feeds deliver unpredictable rewards—sometimes a viral
+            post, sometimes nothing. This intermittent reinforcement is the most resistant to extinction and drives
+            compulsive scrolling.</p>
+        </div>
+      </div>
+
+      <!-- Diagram: Dopamine Reward Cycle -->
+      <div class="diagram-container animate-in" style="margin-top: 3rem;">
+        <h3>Dopamine Reward Cycle</h3>
+        <p class="diagram-caption">The neurochemical loop that drives compulsive social media use</p>
+        <svg class="diagram-svg" viewBox="0 0 600 350" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrowNav" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#60a5fa" />
+            </marker>
+          </defs>
+
+          <!-- Step 1: Trigger -->
+          <circle cx="300" cy="50" r="38" fill="#132040" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="300" y="46" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif"
+            font-size="20">🔔</text>
+          <text x="300" y="65" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="10"
+            font-weight="600">TRIGGER</text>
+
+          <!-- Step 2: Anticipation -->
+          <circle cx="520" cy="140" r="38" fill="#132040" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="520" y="136" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif"
+            font-size="20">⚡</text>
+          <text x="520" y="155" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="9"
+            font-weight="600">ANTICIPATION</text>
+
+          <!-- Step 3: Action -->
+          <circle cx="520" cy="270" r="38" fill="#132040" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="520" y="266" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif"
+            font-size="20">📱</text>
+          <text x="520" y="285" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="10"
+            font-weight="600">ACTION</text>
+
+          <!-- Step 4: Variable Reward -->
+          <circle cx="300" cy="310" r="38" fill="#132040" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="300" y="306" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif"
+            font-size="20">🎰</text>
+          <text x="300" y="325" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="9"
+            font-weight="600">VAR. REWARD</text>
+
+          <!-- Step 5: Dopamine Spike -->
+          <circle cx="80" cy="270" r="38" fill="#132040" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="80" y="266" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif"
+            font-size="20">🧠</text>
+          <text x="80" y="285" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="9"
+            font-weight="600">DOPAMINE</text>
+
+          <!-- Step 6: Craving -->
+          <circle cx="80" cy="140" r="38" fill="#132040" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="80" y="136" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif"
+            font-size="20">🔁</text>
+          <text x="80" y="155" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="10"
+            font-weight="600">CRAVING</text>
+
+          <!-- Connecting arcs -->
+          <path d="M335,60 Q430,50 510,108" fill="none" stroke="#60a5fa" stroke-width="1.5"
+            marker-end="url(#arrowNav)" />
+          <path d="M520,180 L520,228" fill="none" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrowNav)" />
+          <path d="M485,290 Q400,320 340,310" fill="none" stroke="#60a5fa" stroke-width="1.5"
+            marker-end="url(#arrowNav)" />
+          <path d="M262,310 Q170,320 115,290" fill="none" stroke="#60a5fa" stroke-width="1.5"
+            marker-end="url(#arrowNav)" />
+          <path d="M80,232 L80,180" fill="none" stroke="#60a5fa" stroke-width="1.5" marker-end="url(#arrowNav)" />
+          <path d="M115,120 Q200,80 265,55" fill="none" stroke="#60a5fa" stroke-width="1.5"
+            marker-end="url(#arrowNav)" />
+
+          <!-- Center label -->
+          <text x="300" y="180" text-anchor="middle" fill="#3b82f6" font-family="Inter,sans-serif" font-size="13"
+            font-weight="700" opacity="0.6">DOPAMINE</text>
+          <text x="300" y="198" text-anchor="middle" fill="#3b82f6" font-family="Inter,sans-serif" font-size="13"
+            font-weight="700" opacity="0.6">CYCLE</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4 — PSYCHOLOGICAL EFFECTS ============ -->
+  <section class="section section-dark" id="effects">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">Chapter 3</span>
+        <h2>Psychological Effects</h2>
+        <p>The cumulative impact of algorithmic conditioning on cognition, self-perception, and mental health represents
+          a growing area of clinical and developmental concern.</p>
+      </div>
+
+      <div class="effects-grid animate-in">
+        <div class="effect-item">
+          <div class="effect-icon">⏱️</div>
+          <div class="effect-text">
+            <h4>Diminished Attention Span</h4>
+            <p>Short-form content (15–60 second videos) trains the brain to expect rapid stimulation. Research from
+              Microsoft (2015) found average attention spans dropped from 12 to 8 seconds, now further declining with
+              TikTok-era consumption patterns.</p>
+          </div>
+        </div>
+        <div class="effect-item">
+          <div class="effect-icon">🔗</div>
+          <div class="effect-text">
+            <h4>Behavioral Addiction Patterns</h4>
+            <p>Social media use triggers addiction criteria similar to substance abuse: tolerance (needing more screen
+              time), withdrawal (anxiety without access), and continued use despite negative consequences (Andreassen et
+              al., 2016).</p>
+          </div>
+        </div>
+        <div class="effect-item">
+          <div class="effect-icon">📉</div>
+          <div class="effect-text">
+            <h4>Social Comparison &amp; Self-Esteem</h4>
+            <p>Curated feeds amplify upward social comparison. Festinger's Social Comparison Theory predicts that
+              exposure to idealized lives leads to diminished self-evaluation, particularly in adolescents (Vogel et
+              al., 2014).</p>
+          </div>
+        </div>
+        <div class="effect-item">
+          <div class="effect-icon">🪞</div>
+          <div class="effect-text">
+            <h4>Identity Formation &amp; Echo Chambers</h4>
+            <p>Algorithms create identity-reinforcing content loops. Users receive content that confirms existing
+              beliefs and aesthetics, limiting exposure to diverse perspectives and fragmenting shared cultural
+              understanding (Pariser, 2011).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5 — ETHICAL CONCERNS ============ -->
+  <section class="section" id="ethics">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">Chapter 4</span>
+        <h2>Ethical Concerns</h2>
+        <p>As algorithmic conditioning becomes more sophisticated, fundamental questions about human autonomy, consent,
+          and well-being demand urgent attention.</p>
+      </div>
+
+      <!-- Diagram: Algorithm–Person Interaction Model -->
+      <div class="diagram-container animate-in">
+        <h3>Algorithm–Person Interaction Model</h3>
+        <p class="diagram-caption">The asymmetric power dynamic between platform algorithms and individual users</p>
+        <svg class="diagram-svg" viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrowEthics" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#3b82f6" />
+            </marker>
+            <marker id="arrowRed" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#f87171" />
+            </marker>
+          </defs>
+
+          <!-- Platform box -->
+          <rect x="20" y="40" width="220" height="200" rx="16" fill="#132040" stroke="#3b82f6" stroke-width="1.5" />
+          <text x="130" y="70" text-anchor="middle" fill="#fff" font-family="Outfit,sans-serif" font-size="15"
+            font-weight="700">PLATFORM</text>
+          <text x="130" y="100" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif"
+            font-size="11">Engagement Optimization</text>
+          <text x="130" y="120" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">Data
+            Harvesting</text>
+          <text x="130" y="140" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11">A/B
+            Testing at Scale</text>
+          <text x="130" y="160" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif"
+            font-size="11">Persuasive Design Patterns</text>
+          <text x="130" y="185" text-anchor="middle" fill="#60a5fa" font-family="Inter,sans-serif" font-size="10"
+            font-weight="600">⬆ HIGH POWER</text>
+
+          <!-- User box -->
+          <rect x="360" y="40" width="220" height="200" rx="16" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" />
+          <text x="470" y="70" text-anchor="middle" fill="#0f172a" font-family="Outfit,sans-serif" font-size="15"
+            font-weight="700">INDIVIDUAL</text>
+          <text x="470" y="100" text-anchor="middle" fill="#64748b" font-family="Inter,sans-serif"
+            font-size="11">Cognitive Biases</text>
+          <text x="470" y="120" text-anchor="middle" fill="#64748b" font-family="Inter,sans-serif"
+            font-size="11">Emotional Vulnerability</text>
+          <text x="470" y="140" text-anchor="middle" fill="#64748b" font-family="Inter,sans-serif" font-size="11">Need
+            for Social Validation</text>
+          <text x="470" y="160" text-anchor="middle" fill="#64748b" font-family="Inter,sans-serif"
+            font-size="11">Limited Algorithmic Awareness</text>
+          <text x="470" y="185" text-anchor="middle" fill="#f87171" font-family="Inter,sans-serif" font-size="10"
+            font-weight="600">⬇ LOW POWER</text>
+
+          <!-- Arrows -->
+          <line x1="240" y1="100" x2="360" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowEthics)" />
+          <text x="300" y="92" text-anchor="middle" fill="#3b82f6" font-family="Inter,sans-serif" font-size="9"
+            font-weight="600">CONTENT PUSH</text>
+
+          <line x1="360" y1="160" x2="240" y2="160" stroke="#f87171" stroke-width="2" marker-end="url(#arrowRed)" />
+          <text x="300" y="178" text-anchor="middle" fill="#f87171" font-family="Inter,sans-serif" font-size="9"
+            font-weight="600">DATA EXTRACTION</text>
+
+          <!-- Outcome -->
+          <rect x="180" y="255" width="240" height="20" rx="6" fill="none" />
+          <text x="300" y="270" text-anchor="middle" fill="#94a3b8" font-family="Inter,sans-serif" font-size="11"
+            font-style="italic">Asymmetric power dynamic</text>
+        </svg>
+      </div>
+
+      <div class="ethics-list animate-in">
+        <div class="ethics-item">
+          <div class="ethics-marker">🎭</div>
+          <div class="ethics-content">
+            <h4>Manipulation Without Consent</h4>
+            <p>Users rarely understand the extent to which their behavior is being shaped. Unlike traditional
+              advertising, algorithmic conditioning operates below conscious awareness, exploiting cognitive biases
+              without informed consent (Zuboff, 2019).</p>
+          </div>
+        </div>
+        <div class="ethics-item">
+          <div class="ethics-marker">🔓</div>
+          <div class="ethics-content">
+            <h4>Undermining Autonomy</h4>
+            <p>When algorithms determine what we see, believe, and desire, the concept of free choice becomes
+              compromised. Persuasive design patterns (infinite scroll, autoplay, push notifications) are engineered to
+              override deliberate decision-making.</p>
+          </div>
+        </div>
+        <div class="ethics-item">
+          <div class="ethics-marker">💔</div>
+          <div class="ethics-content">
+            <h4>Mental Health Risks</h4>
+            <p>Meta's internal research (the "Facebook Files," 2021) revealed that Instagram's algorithm made body image
+              issues worse for 1 in 3 teen girls. Algorithmic amplification of harmful content correlates with rising
+              rates of anxiety, depression, and self-harm in adolescents.</p>
+          </div>
+        </div>
+        <div class="ethics-item">
+          <div class="ethics-marker">👶</div>
+          <div class="ethics-content">
+            <h4>Vulnerability of Minors</h4>
+            <p>Children and adolescents, whose prefrontal cortices are not fully developed, are particularly susceptible
+              to conditioning. Their diminished capacity for self-regulation makes them disproportionately affected by
+              variable reward mechanisms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6 — RESEARCH & CASE STUDIES ============ -->
+  <section class="section section-alt" id="research">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">Chapter 5</span>
+        <h2>Research &amp; Case Studies</h2>
+        <p>Key investigations that have shaped our understanding of algorithmic influence on human behavior.</p>
+      </div>
+
+      <div class="animate-in">
+        <div class="case-study">
+          <span class="case-study-tag">Internal Leak</span>
+          <h4>The Facebook Files (2021)</h4>
+          <p>Whistleblower Frances Haugen disclosed internal Meta research showing the company knew Instagram was
+            harmful to teenage mental health, particularly regarding body image and suicidal ideation, yet prioritized
+            engagement metrics over user well-being. The documents revealed that Instagram's Explore page algorithm
+            actively funneled vulnerable users toward increasingly extreme content.</p>
+          <p class="case-study-source">Source: Wall Street Journal investigation; U.S. Senate Commerce Committee
+            hearings, October 2021.</p>
+        </div>
+
+        <div class="case-study">
+          <span class="case-study-tag">Experimental Study</span>
+          <h4>Facebook Emotional Contagion Experiment (2014)</h4>
+          <p>Facebook manipulated the News Feeds of 689,003 users without consent to test whether emotional states could
+            be transferred through algorithmic content selection. Users exposed to fewer positive posts wrote more
+            negative posts, and vice versa—demonstrating that algorithms can manipulate emotional states at scale.</p>
+          <p class="case-study-source">Source: Kramer, A.D.I., Guillory, J.E., & Hancock, J.T. (2014). PNAS, 111(24),
+            8788–8790.</p>
+        </div>
+
+        <div class="case-study">
+          <span class="case-study-tag">Platform Investigation</span>
+          <h4>TikTok's Rabbit Hole Effect (2022)</h4>
+          <p>Research by the Center for Countering Digital Hate found that TikTok's For You Page algorithm could
+            recommend self-harm and eating disorder content to new accounts within 2.6 minutes. Accounts registered as
+            13-year-olds were shown harmful content every 39 seconds, demonstrating the algorithm's tendency to rapidly
+            identify and amplify vulnerability.</p>
+          <p class="case-study-source">Source: Center for Countering Digital Hate, "Deadly by Design" report, December
+            2022.</p>
+        </div>
+
+        <div class="case-study">
+          <span class="case-study-tag">Longitudinal Study</span>
+          <h4>Social Media and Adolescent Well-Being (Twenge, 2017)</h4>
+          <p>Jean Twenge's analysis of large-scale surveys found that teens who spent 5+ hours daily on electronic
+            devices were 66% more likely to have at least one suicide risk factor. The timing of increased smartphone
+            and social media adoption correlated strongly with sharp increases in teen depression and loneliness
+            beginning around 2012.</p>
+          <p class="case-study-source">Source: Twenge, J.M. (2017). "iGen." Atria Books; Twenge et al. (2018). Clinical
+            Psychological Science, 6(1), 3–17.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 7 — CONCLUSION ============ -->
+  <section class="section section-dark" id="conclusion">
+    <div class="container">
+      <div class="conclusion-content animate-in">
+        <span class="section-label">Conclusion</span>
+        <h2>Key Findings &amp; Future Implications</h2>
+        <p>The convergence of advanced machine learning, behavioral psychology, and attention economics has created
+          systems that condition human behavior at a scale and precision never before possible.</p>
+
+        <div class="key-findings">
+          <div class="finding">
+            <span class="finding-check">✓</span>
+            <p>Recommendation algorithms employ classical and operant conditioning principles, with variable reward
+              schedules being the most potent driver of compulsive use.</p>
+          </div>
+          <div class="finding">
+            <span class="finding-check">✓</span>
+            <p>Documented psychological effects include diminished attention, addiction patterns, social comparison
+              distress, and identity fragmentation through echo chambers.</p>
+          </div>
+          <div class="finding">
+            <span class="finding-check">✓</span>
+            <p>The asymmetric power dynamic between platforms and individuals, especially minors, raises serious ethical
+              questions about consent, autonomy, and duty of care.</p>
+          </div>
+          <div class="finding">
+            <span class="finding-check">✓</span>
+            <p>Regulatory frameworks (EU's DSA, proposed US KOSA) are beginning to address algorithmic harms, but
+              enforcement and technical standards remain in early stages.</p>
+          </div>
+        </div>
+
+        <p class="conclusion-note">"The question is no longer whether social media algorithms influence behavior—it is
+          whether we will choose to govern that influence before it governs us."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 8 — REFERENCES ============ -->
+  <section class="section section-alt" id="references">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">Bibliography</span>
+        <h2>References</h2>
+        <p>Key literature and research studies cited in this academic exploration.</p>
+      </div>
+
+      <div class="references-list animate-in">
+        <div class="reference-item">
+          <strong>Andreassen, C. S., et al. (2016)</strong>. The relationship between addictive use of social media and
+          video games and symptoms of psychiatric disorders: A large-scale cross-sectional study. <em>Psychology of
+            Addictive Behaviors</em>, 30(2), 252–262.
+        </div>
+        <div class="reference-item">
+          <strong>Festinger, L. (1954)</strong>. A Theory of Social Comparison Processes. <em>Human Relations</em>,
+          7(2), 117–140.
+        </div>
+        <div class="reference-item">
+          <strong>Kramer, A. D., et al. (2014)</strong>. Experimental evidence of massive-scale emotional contagion
+          through social networks. <em>Proceedings of the National Academy of Sciences (PNAS)</em>, 111(24), 8788–8790.
+        </div>
+        <div class="reference-item">
+          <strong>Pariser, E. (2011)</strong>. <em>The Filter Bubble: What the Internet Is Hiding from You</em>. Penguin
+          Press.
+        </div>
+        <div class="reference-item">
+          <strong>Twenge, J. M. (2017)</strong>. <em>iGen: Why Today's Super-Connected Kids Are Growing Up Less
+            Rebellious, More Tolerant, Less Happy—and Completely Unprepared for Adulthood</em>. Atria Books.
+        </div>
+        <div class="reference-item">
+          <strong>Zuboff, S. (2019)</strong>. <em>The Age of Surveillance Capitalism: The Fight for a Human Future at
+            the New Frontier of Power</em>. PublicAffairs.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2.5" fill="none"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>Social Media Algorithms &amp; Behavioral Conditioning — Academic Reference Material, 2025. For educational use
+      only.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
